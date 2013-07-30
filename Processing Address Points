@@ -5,19 +5,22 @@ STEPS:
 1) Fix NAME = HWY issues:
 -Create a selection query with below expression:
 
-"NAME"  =   'HWY' or  "NAME" = 'HWY 1' or  "NAME" = 'HWY 101' or  "NAME" = 'HWY 101N' or "NAME" = 'HWY 101S' or "NAME" = 'HWY 229' or "NAME" = 'HWY 33'
-or "NAME" = 'HWY 41' or "NAME" = 'HWY 46' or "NAME" = 'HWY 46 E' or "NAME" = 'HWY 46 WEST' or "NAME" = 'Hwy 41' or "NAME" = 'Hwy 46' 
+"NAME"  =   'HWY' or  "NAME" = 'HWY 1' or  "NAME" = 'HWY 101' or  "NAME" = 'HWY 101N' or "NAME" = 'HWY 101S' 
+or "NAME" = 'HWY 229' or "NAME" = 'HWY 33' or "NAME" = 'HWY 41' or "NAME" = 'HWY 46' or "NAME" = 'HWY 46 E' 
+or "NAME" = 'HWY 46 WEST' or "NAME" = 'Hwy 41' or "NAME" = 'Hwy 46' 
 
 -Start edit session and open Field Calculator
 -Only update selected features.
 -Check Update existing field and select NAME.
 -Paste script below into Expression box:
 
-case when "NAME" = 'HWY' then 'HIGHWAY 41' when "NAME" = 'HWY 1' then 'HIGHWAY 1' when "NAME" = 'HWY 101' then 'HIGHWAY 101' 
-when "NAME" = 'HWY 101N' then 'HIGHWAY 101 NORTH' when "NAME" = 'HWY 101S' then 'HIGHWAY 101 SOUTH' 
-when "NAME" = 'HWY 229' then 'HIGHWAY 229' when "NAME" = 'HWY 33' then 'HIGHWAY 33' when "NAME" = 'HWY 41' then 'HIGHWAY 41' 
-when "NAME" = 'HWY 46' then 'HIGHWAY 46' when "NAME" = 'HWY 46 E' then 'HIGHWAY 46 EAST' when "NAME" = 'HWY 46 WEST' then 'HIGHWAY 46 WEST' 
-when "NAME" = 'Hwy 41' then 'HIGHWAY 41' when "NAME" = 'Hwy 46' then 'HIGHWAY 46'end
+case when "NAME" = 'HWY' then 'HIGHWAY 41' when "NAME" = 'HWY 1' then 'HIGHWAY 1' 
+when "NAME" = 'HWY 101' then 'HIGHWAY 101' when "NAME" = 'HWY 101N' then 'HIGHWAY 101 NORTH' 
+when "NAME" = 'HWY 101S' then 'HIGHWAY 101 SOUTH' when "NAME" = 'HWY 229' then 'HIGHWAY 229' 
+when "NAME" = 'HWY 33' then 'HIGHWAY 33' when "NAME" = 'HWY 41' then 'HIGHWAY 41' 
+when "NAME" = 'HWY 46' then 'HIGHWAY 46' when "NAME" = 'HWY 46 E' then 'HIGHWAY 46 EAST' 
+when "NAME" = 'HWY 46 WEST' then 'HIGHWAY 46 WEST' when "NAME" = 'Hwy 41' then 'HIGHWAY 41' 
+when "NAME" = 'Hwy 46' then 'HIGHWAY 46'end
 
 -Click OK
 -Clear the selection
@@ -28,17 +31,19 @@ when "NAME" = 'Hwy 41' then 'HIGHWAY 41' when "NAME" = 'Hwy 46' then 'HIGHWAY 46
 
 --Prefix2, Output field width:10--
 
-case when "PREFIX" = 'N' then 'North' when "PREFIX" = 'S' then 'South' when "PREFIX" = 'E' then 'East' when "PREFIX" = 'W' then 'West' 
-when "PREFIX" = 'NO' then 'North' when "PREFIX" = 'SO' then 'South' when "PREFIX" = 'EA' then 'East' when "PREFIX" = 'WE' then 'West'end
+case when "PREFIX" = 'N' then 'North' when "PREFIX" = 'S' then 'South' when "PREFIX" = 'E' then 'East' 
+when "PREFIX" = 'W' then 'West' when "PREFIX" = 'NO' then 'North' when "PREFIX" = 'SO' then 'South' 
+when "PREFIX" = 'EA' then 'East' when "PREFIX" = 'WE' then 'West'end
 
 --Type2, Output field width:10--
 
 case when "TYPE" = 'AV' then 'Avenue' when "TYPE" = 'AVE' then 'Avenue' when "TYPE" = 'BLVD' then 'Boulevard' 
-when "TYPE" = 'CIR' then 'Circle' when "TYPE" = 'CR' then 'Circle' when "TYPE" = 'CT' then 'Court' when "TYPE" = 'Ct' then 'Court' 
-when "TYPE" = 'DR' then 'Drive' when "TYPE" = 'HWY' then 'Highway' when "TYPE" = 'LN' then 'Lane' when "TYPE" = 'LOOP' then 'Loop' 
-when "TYPE" = 'PKWY' then 'Parkway' when "TYPE" = 'PL' then 'Place' when "TYPE" = 'PY'then 'Parkway' when "TYPE" = 'RD' then 'Road' 
-when "TYPE" = 'ROAD' then 'Road' when "TYPE" = 'ST' then 'Street' when "TYPE" = 'TRL' then 'Trail' when "TYPE" = 'WAY' then 'Way' 
-when "TYPE" = 'WY' then 'Way' end
+when "TYPE" = 'CIR' then 'Circle' when "TYPE" = 'CR' then 'Circle' when "TYPE" = 'CT' then 'Court' 
+when "TYPE" = 'Ct' then 'Court' when "TYPE" = 'DR' then 'Drive' when "TYPE" = 'HWY' then 'Highway' 
+when "TYPE" = 'LN' then 'Lane' when "TYPE" = 'LOOP' then 'Loop' when "TYPE" = 'PKWY' then 'Parkway' 
+when "TYPE" = 'PL' then 'Place' when "TYPE" = 'PY'then 'Parkway' when "TYPE" = 'RD' then 'Road' 
+when "TYPE" = 'ROAD' then 'Road' when "TYPE" = 'ST' then 'Street' when "TYPE" = 'TRL' then 'Trail' 
+when "TYPE" = 'WAY' then 'Way' when "TYPE" = 'WY' then 'Way' end
 
 3) Populate "Fullname2" with following command:
 
