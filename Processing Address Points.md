@@ -151,11 +151,16 @@ File Location:
 
 X:\_data\Population\TrimLeadingZeros_VB.cal
 **In ArcMap 10.1**
+
 -Open the address points shp file you edited in QGIS.
+
 -Right-click the Fullname2 field and select the Field Calculator.
+
 -Be sure the Parser is set to VB Script.
+
 -Load the TrimLeadingZeros_VB.cal file.
+
 -Replace [YOUR_FIELD] with [Fullname2] and click OK.
 
-**Save as ADDR_PTS_yyyy/mm/dd_PROCESSED.shp
+**Save as ADDR_PTS_PROCESSED.shp**
 ---------------------------------------------------------
