@@ -29,7 +29,11 @@ when "NAME" = 'Hwy 46' then 'HIGHWAY 46'end
 
 -Clear the selection
 
-**2. Create new Text(string) fields for "Prefix2","Type2", and "Fullname2"**
+**2. Create new Text(string) fields for "Prefix2","Type2","Name2" and "Fullname2"**
+
+-"Name2" is a string field with a width of 15, populate it with the following command:
+
+title("NAME")
 
 -Populate "Prefix2" and "Type2" with following commands:
 
