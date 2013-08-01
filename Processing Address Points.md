@@ -1,8 +1,11 @@
 **Add most current address points shp file to be editied**
+
 STEPS:
 
 **In QGIS 2.0**
+
 1) Fix NAME = HWY issues:
+
 -Create a selection query with below expression:
 
 "NAME"  =   'HWY' or  "NAME" = 'HWY 1' or  "NAME" = 'HWY 101' or  "NAME" = 'HWY 101N' or "NAME" = 'HWY 101S' 
@@ -23,6 +26,7 @@ when "NAME" = 'HWY 46 WEST' then 'HIGHWAY 46 WEST' when "NAME" = 'Hwy 41' then '
 when "NAME" = 'Hwy 46' then 'HIGHWAY 46'end
 
 -Click OK
+
 -Clear the selection
 
 2) Create new Text(string) fields for "Prefix2","Type2", and "Fullname2"
@@ -48,6 +52,7 @@ when "TYPE" = 'WAY' then 'Way' when "TYPE" = 'WY' then 'Way' end
 3) Populate "Fullname2" with following command:
 
 --Fullname2, Output field width:30--
+
 concat ( tostring("ADDRESS"),' ',"Prefix2",' ',title("NAME"),' ',"Type2")
 
 4) For Name = HIGHWAY 46 and TYPE = HWY select:
