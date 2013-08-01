@@ -69,6 +69,10 @@ concat ( tostring("ADDRESS"),' ',"Prefix2",' ',title("NAME"))
 
 5) Populate NULL "Fullname2" values by creating the below selection queries and then using the following expressions 
 in the Field Calculator to update your existing field "Fullname2".  
+#Ex.
+Selection query
+
+Field Calculator expression
 
 #1
 "Prefix2" is NULL and "NAME" is not NULL and "Type2" is not NULL
