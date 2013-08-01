@@ -1,8 +1,8 @@
-**Add most current address points shp file to be editied**
+#STEPS:
 
-STEPS:
+##**In QGIS 2.0**
 
-**In QGIS 2.0**
+###**Add most current address points shp file to be editied**
 
 **1. Fix NAME = HWY issues:**
 
@@ -69,72 +69,72 @@ concat ( tostring("ADDRESS"),' ',"Prefix2",' ',title("NAME"))
 
 **5. Populate NULL "Fullname2" values by creating the below selection queries and then using the following expressions 
 in the Field Calculator to update your existing field "Fullname2".**  
-#Ex.
+###Ex.
 Selection query
 
 Field Calculator expression
 
-#1
+###1
 "Prefix2" is NULL and "NAME" is not NULL and "Type2" is not NULL
 
 concat ( tostring("ADDRESS"),' ',title("NAME"),' ',"Type2")
 
-#2
+###2
 "Prefix2" is NULL and "NAME" is not NULL and "Type2" is NULL
 
 concat ( tostring("ADDRESS"),' ',title("NAME"))
 
-#3
+###3
 "Prefix2" is NULL and "NAME" is NULL and "Type2" is not NULL
 
 concat ( tostring("ADDRESS"),' ',"Type2")
 
-#4
+###4
 "Prefix2" is NULL and "NAME" is NULL and "Type2" is NULL and "ADDRESS" is not NULL
 
 concat ( tostring("ADDRESS"))
 
-#5
+###5
 "Prefix2" is not NULL and "NAME" is not NULL and "Type2" is NULL
 
 concat ( tostring("ADDRESS"),' ',"Prefix2",' ',title("NAME"))
 
-#6
+###6
 "Prefix2" is not NULL and "NAME" is NULL and "Type2" is NULL
 
 concat ( tostring("ADDRESS"),' ',"Prefix2")
 
-#7
+###7
 "ADDRESS" is NULL and "Prefix2" is NULL and "NAME" is not NULL and "Type2" is not NULL
 
 concat ( title("NAME"),' ',"Type2")
 
-#8
+###8
 "ADDRESS" is NULL and "Prefix2" is NULL and "NAME" is not NULL and "Type2" is NULL
 
 concat ( title("NAME"))
 
-#9
+###9
 "ADDRESS" is not NULL AND "NAME" IS NULL 
 
 concat ( tostring("ADDRESS"))
 
-#10
+###10
 "ADDRESS" is not NULL AND "NAME" is NULL AND "Prefix2" is not NULL
 
 concat ( tostring("ADDRESS"),' ',"Prefix2",' ','Unknown Name ')
 
-#11
+###11
 "ADDRESS" is NULL and "Prefix2" is not NULL and "NAME" is not NULL and "Type2" is not NULL
 
 concat ( "Prefix2",' ',title("NAME"),' ',"Type2")
 
-#12
+###12
 "ADDRESS" is NULL and "Prefix2" is not NULL and "NAME" is not NULL and "Type2" is NULL
 
 concat ( "Prefix2",' ',title("NAME"))
 
-#13
+###13
 "ADDRESS" is NULL and "Prefix2" is NULL and "NAME" is NULL and "Type2" is not NuLL
 
 concat('Address & Street Unknown',' ',"Type2")
@@ -144,13 +144,15 @@ concat('Address & Street Unknown',' ',"Type2")
 ---------------------------------------------------------
 **6. Trim Leading Zeros from "ADDRESS"**
 
-Source URL:
+######Source URL:
 
 http://www.geospatialanalyst.com/2011/03/remove-leading-zeros-from-string.html
-File Location:
+
+######File Location:
 
 X:\_data\Population\TrimLeadingZeros_VB.cal
-**In ArcMap 10.1**
+
+##In ArcMap 10.1
 
 -Open the address points shp file you edited in QGIS.
 
