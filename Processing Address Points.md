@@ -4,7 +4,7 @@ STEPS:
 
 **In QGIS 2.0**
 
-1. Fix NAME = HWY issues:
+**1. Fix NAME = HWY issues:**
 
 -Create a selection query with below expression:
 
@@ -29,7 +29,7 @@ when "NAME" = 'Hwy 46' then 'HIGHWAY 46'end
 
 -Clear the selection
 
-2. Create new Text(string) fields for "Prefix2","Type2", and "Fullname2"
+**2. Create new Text(string) fields for "Prefix2","Type2", and "Fullname2"**
 
 -Populate "Prefix2" and "Type2" with following commands:
 
@@ -49,13 +49,13 @@ when "TYPE" = 'PL' then 'Place' when "TYPE" = 'PY'then 'Parkway' when "TYPE" = '
 when "TYPE" = 'ROAD' then 'Road' when "TYPE" = 'ST' then 'Street' when "TYPE" = 'TRL' then 'Trail' 
 when "TYPE" = 'WAY' then 'Way' when "TYPE" = 'WY' then 'Way' end
 
-3. Populate "Fullname2" with following command:
+**3. Populate "Fullname2" with following command:**
 
 --Fullname2, Output field width:30--
 
 concat ( tostring("ADDRESS"),' ',"Prefix2",' ',title("NAME"),' ',"Type2")
 
-4. For Name = HIGHWAY 46 and TYPE = HWY select:
+**4. For Name = HIGHWAY 46 and TYPE = HWY select:**
 
 "NAME" = 'HIGHWAY 41' and "TYPE" = 'HWY'
 
@@ -67,8 +67,8 @@ concat ( tostring("ADDRESS"),' ',"Prefix2",' ',title("NAME"))
 
 ---------------------------------------------------------
 
-5. Populate NULL "Fullname2" values by creating the below selection queries and then using the following expressions 
-in the Field Calculator to update your existing field "Fullname2".  
+**5. Populate NULL "Fullname2" values by creating the below selection queries and then using the following expressions 
+in the Field Calculator to update your existing field "Fullname2".**  
 #Ex.
 Selection query
 
@@ -142,7 +142,7 @@ concat('Address & Street Unknown',' ',"Type2")
 ---------------------------------------------------------
 **SAVE EDITS**
 ---------------------------------------------------------
-6. Trim Leading Zeros from "ADDRESS"
+**6. Trim Leading Zeros from "ADDRESS"**
 
 Source URL:
 
