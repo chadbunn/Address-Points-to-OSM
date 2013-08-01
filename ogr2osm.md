@@ -36,10 +36,9 @@ Options:
   -d, --debug-tags      Output the tags for every feature parsed.
   -a, --atribute-stats  Outputs a summary of the different tags / attributes
                         encountered.
-  -f, --force           Force overwrite of output file.
-error: you must specify a source filename
+  -f, --force           Force overwrite of output file. 
 
-C:\_data\Population\AddressPoints_to_OSM\ogr2osm>
+C:\_data\Population\AddressPoints_to_OSM\ogr2osm> 
 
 4.Now you are ready to convert your ADDR_PTS_PROCESSED.shp to an OSM file.
 	
