@@ -13,8 +13,11 @@ or "NAME" = 'HWY 229' or "NAME" = 'HWY 33' or "NAME" = 'HWY 41' or "NAME" = 'HWY
 or "NAME" = 'HWY 46 WEST' or "NAME" = 'Hwy 41' or "NAME" = 'Hwy 46' 
 
 -Start edit session and open Field Calculator
+
 -Only update selected features.
+
 -Check Update existing field and select NAME.
+
 -Paste script below into Expression box:
 
 case when "NAME" = 'HWY' then 'HIGHWAY 41' when "NAME" = 'HWY 1' then 'HIGHWAY 1' 
