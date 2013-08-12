@@ -142,7 +142,7 @@ concat ( "Prefix2",' ',title("NAME"),' ',"Type2")
 concat ( "Prefix2",' ',title("NAME"))
 
 ###13
-"ADDRESS" is NULL and "Prefix2" is NULL and "NAME" is NULL and "Type2" is not NuLL
+"ADDRESS" is NULL and "Prefix2" is NULL and "NAME" is NULL and "Type2" is not NULL
 
 concat('Address & Street Unknown',' ',"Type2")
 
@@ -157,7 +157,7 @@ http://www.geospatialanalyst.com/2011/03/remove-leading-zeros-from-string.html
 
 ######File Location:
 
-X:\_data\Population\TrimLeadingZeros_VB.cal
+X:\_data\Population\AddressPoints_to_OSM\TrimLeadingZeros_VB.cal
 
 ##In ArcMap 10.1
 
