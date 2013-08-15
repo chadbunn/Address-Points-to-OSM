@@ -20,15 +20,14 @@ cd [Your_ogr2osm_folder_file_path_here]
 
 ![ogr2osmivan menu](http://i1367.photobucket.com/albums/r788/chadbunn/ogr2osmivan_zps2ea58c5f.png?raw = true)
 
-C:\_data\Population\AddressPoints_to_OSM\ogr2osm> 
-
 4.Now you are ready to convert your ADDR_PTS_PROCESSED.shp to an OSM file.
 	
 Insert the following command and hit enter:
 
 	python ogr2osmivan.py [Your_ADDR_PTS_PROCESSED.shp] -t addrPts.py -e 2229 -o SLO_ADDR_PTS.osm -v
 	
-The prgoram will run for a few minutes and then your .osm file for address points will be ready for conflation. Great work!
+The program will run for a few minutes and then your .osm file for address points will be ready for conflation. Great work!
 
+![You're awesome](http://cdn.arkarthick.com/wp-content/uploads/2011/11/entrepreneur-leadership-skills-good-job-whos-awesome.jpg?raw = true)
 	
 	
