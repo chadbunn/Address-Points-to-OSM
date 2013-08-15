@@ -8,7 +8,9 @@
 
 2.Hold shift + right-click on the ogr2osm folder and select Open command window here
 
-3.Type "python ogr2osmivan.py" and hit enter.
+3.Type 
+	python ogr2osmivan.py
+and hit enter.
 
 **If you receive an ImportError, open the OSGeo4W shell and enter (without the brackets):** 
 
