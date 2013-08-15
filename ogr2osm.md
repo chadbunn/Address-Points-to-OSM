@@ -8,13 +8,15 @@
 
 2.Hold shift + right-click on the ogr2osm folder and select Open command window here
 
-3.Type 
+3.Type: 
+
 	python ogr2osmivan.py
+
 and hit enter.
 
 **If you receive an ImportError, open the OSGeo4W shell and enter (without the brackets):** 
 
-cd [Your_ogr2osm_folder_file_path_here]
+	cd [Your_ogr2osm_folder_file_path_here]
 
 **and hit enter. Now try step 3 again.**
 	
@@ -22,7 +24,7 @@ cd [Your_ogr2osm_folder_file_path_here]
 
 ![ogr2osmivan menu](http://i1367.photobucket.com/albums/r788/chadbunn/ogr2osmivan_zps2ea58c5f.png?raw = true)
 
-4.Now you are ready to convert your ADDR_PTS_PROCESSED.shp to an OSM file.
+4.Now you are ready to convert your ADDR_PTS_PROCESSED.shp to a .OSM file.
 	
 Insert the following command and hit enter:
 
