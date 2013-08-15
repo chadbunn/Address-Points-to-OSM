@@ -12,7 +12,8 @@
 
 **If you receive an ImportError, open the OSGeo4W shell and enter (without the brackets): 
 
-"cd [Your_ogr2osm_folder_file_path_here]" 
+"cd [Your_ogr2osm_folder_file_path_here]"
+
 and hit enter. Now try step 3 again.**
 	
 ##You should see this menu:
