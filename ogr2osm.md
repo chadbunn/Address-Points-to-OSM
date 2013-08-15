@@ -18,28 +18,7 @@ cd [Your_ogr2osm_folder_file_path_here]
 	
 ##You should see this menu:
 
-C:\_data\Population\AddressPoints_to_OSM\ogr2osm>python ogr2osmivan.py
-Usage: ogr2osmivan.py SRCFILE
-
-Options:
-  -h, --help            show this help message and exit
-  -t TRANSLATION, --translation=TRANSLATION
-                        Select the attribute-tags translation method. See the
-                        translations/ directory for valid values.
-  -o OUTPUT, --output=OUTPUT
-                        Set destination .osm file name and location.
-  -e EPSG_CODE, --epsg=EPSG_CODE
-                        EPSG code of source file. Do not include the 'EPSG:'
-                        prefix. If specified, overrides projection from source
-                        metadata if it exists.
-  -p PROJ4_STRING, --proj4=PROJ4_STRING
-                        PROJ.4 string. If specified, overrides projection from
-                        source metadata if it exists.
-  -v, --verbose
-  -d, --debug-tags      Output the tags for every feature parsed.
-  -a, --atribute-stats  Outputs a summary of the different tags / attributes
-                        encountered.
-  -f, --force           Force overwrite of output file. 
+![ogr2osmivan menu](http://postimg.org/image/473eqtr5v/?raw=true)
 
 C:\_data\Population\AddressPoints_to_OSM\ogr2osm> 
 
