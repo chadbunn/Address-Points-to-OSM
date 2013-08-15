@@ -18,7 +18,7 @@ cd [Your_ogr2osm_folder_file_path_here]
 	
 ##You should see this menu:
 
-![ogr2osmivan menu](http://postimg.org/image/473eqtr5v/?raw=true)
+![ogr2osmivan menu](http://postimg.org/image/473eqtr5v/
 
 C:\_data\Population\AddressPoints_to_OSM\ogr2osm> 
 
