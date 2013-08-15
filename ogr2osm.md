@@ -4,7 +4,7 @@
 
 	X:_data\Population\AddressPoints_to_OSM\ogr2osm
 
-##Be sure your ADDR_PTS_Processed.shp is in this folder.##
+##Be sure your ADDR_PTS_PROCESSED.shp is in this folder.##
 
 2.Hold shift + right-click on the ogr2osm folder and select Open command window here
 
