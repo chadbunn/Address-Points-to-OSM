@@ -27,6 +27,8 @@ C:\_data\Population\AddressPoints_to_OSM\ogr2osm>
 Insert the following command and hit enter:
 
 	python ogr2osmivan.py [Your_ADDR_PTS_PROCESSED.shp] -t addrPts.py -e 2229 -o SLO_ADDR_PTS.osm -v
+	
+The prgoram will run for a few minutes and then your .osm file for address points will be ready for conflation. Great work!
 
 	
 	
