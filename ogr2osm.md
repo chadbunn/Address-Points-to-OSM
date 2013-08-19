@@ -26,11 +26,13 @@ and hit enter.
 
 4.Now you are ready to convert your ADDR_PTS_PROCESSED.shp to a .OSM file.
 	
-Insert the following command and hit enter:
+Insert the following command and hit enter (be sure to remove the brackets and type in the file name for your processed address points .shp file):
 
 	python ogr2osmivan.py [Your_ADDR_PTS_PROCESSED.shp] -t addrPts.py -e 2229 -o SLO_ADDR_PTS.osm -v
 	
 The program will run for a few minutes and then your .osm file for address points will be ready for conflation. Great work!
+
+Your .osm address points layer will located in the ogr2osm folder on your machine. It will be called SLO_ADDR_PTS.osm
 
 ![You're awesome](http://cdn.arkarthick.com/wp-content/uploads/2011/11/entrepreneur-leadership-skills-good-job-whos-awesome.jpg?raw = true)
 	
