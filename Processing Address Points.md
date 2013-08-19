@@ -1,6 +1,6 @@
 #STEPS:
 
-##**In QGIS 2.0**
+##**In QGIS**
 
 ###**Add most current address points shp file to be editied**
 
