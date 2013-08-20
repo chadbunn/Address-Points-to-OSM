@@ -175,3 +175,5 @@ X:\_data\Population\AddressPoints_to_OSM\TrimLeadingZeros_VB.cal
 **Save as ADDR_PTS_PROCESSED.shp**
 ---------------------------------------------------------
 ###Now you can proceed to the ogr2osm section.
+
+https://github.com/chadbunn/Address-Points-to-OSM/blob/master/ogr2osm.md
