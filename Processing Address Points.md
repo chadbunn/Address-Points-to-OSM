@@ -147,9 +147,12 @@ concat ( "Prefix2",' ',title("NAME"))
 concat('Address & Street Unknown',' ',"Type2")
 
 ---------------------------------------------------------
-**SAVE EDITS**
----------------------------------------------------------
-**6. Trim Leading Zeros from "ADDRESS"**
+
+**6.SAVE EDITS**
+
+**7. Trim Leading Zeros from "Fullname2"**
+
+##In ArcMap 10.1
 
 ######Source URL:
 
@@ -159,13 +162,11 @@ http://www.geospatialanalyst.com/2011/03/remove-leading-zeros-from-string.html
 
 X:\_data\Population\AddressPoints_to_OSM\TrimLeadingZeros_VB.cal
 
-##In ArcMap 10.1
-
 -Open the address points shp file you edited in QGIS.
 
 -Right-click the Fullname2 field and select the Field Calculator.
 
--Be sure the Parser is set to VB Script.
+-Set the Parser to VB Script if not already selected.
 
 -Load the TrimLeadingZeros_VB.cal file.
 
